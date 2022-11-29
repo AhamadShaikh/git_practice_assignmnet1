@@ -2,14 +2,14 @@ let rev = 0;
 let num = 151
   let ans = num;
  
-     while(num < 0)
+     while(num > 0)
      {
          let rem=num%10;
-         num=rev*10+num;
+         rev=rev*10+rem;
          num=Math.floor(num/10);
      }
     
-        if(rev==num)
+        if(rev==ans)
         {
             console.log("Palindrome Number");
         }
